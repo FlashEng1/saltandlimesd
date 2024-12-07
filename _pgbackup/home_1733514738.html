@@ -30,76 +30,52 @@
             //   for an individual element
             var msnry = new Masonry( '.grid', {
             // options
-            });            
+            });
+
+
+            document.addEventListener(
+                "DOMContentLoaded", () => {
+                    new Mmenu( "#navmenu", {
+                       "offCanvas": {
+                          "position": "left"
+                       },
+                       "theme": "black"
+                    });
+                }
+            );
         </script>
     </head>
     <body> 
         <header>
             <nav id="navmenu" class="neon-nav">
-                <div class="nav-container">
-                    <ul class="nav-left">
-                        <li><a href="index.html" class="neon-link"><span data-hover="Home">Home</span></a>
-                        </li>
-                        <li><a href="#menu" class="neon-link"><span data-hover="Menu">Menu</span></a>
-                        </li>
-                        <li><a href="#reserve" class="neon-link"><span data-hover="Reserve">Reserve</span></a>
-                        </li>
-                    </ul>
-                    <div class="logo-section">
-                        <img src="Images/Logo salt and lime.png" alt="Salt + Lime Logo" class="logo">
-                    </div>
-                    <ul class="nav-right">
-                        <li><a href="https://stores.wallatees.com/salt_lime/shop/home" class="neon-link" target="_blank"><span data-hover="Shop">Shop</span></a>
-                        </li>
-                        <li><a href="gallery.html" class="neon-link"><span data-hover="Gallery">Gallery</span></a>
-                        </li>
-                        <li><a href="our-story.html" class="neon-link"><span data-hover="Our Story">Our Story</span></a>
-                        </li>
-                    </ul>
+                <ul class="nav-left">
+                    <li><a href="index.html" class="neon-link"><span data-hover="Home">Home</span></a>
+                    </li>
+                    <li><a href="#menu" class="neon-link"><span data-hover="Menu">Menu</span></a>
+                    </li>
+                    <li><a href="#reserve" class="neon-link"><span data-hover="Reserve">Reserve</span></a>
+                    </li>
+                </ul>
+                <div class="logo-section">
+                    <img src="Images/Logo salt and lime.png" alt="Salt + Lime Logo" class="logo">
                 </div>
-            </nav>
-            <nav class="mobile-menu menu-container">
-                <!-- burger menu -->
-                <input type="checkbox" aria-label="Toggle menu"/><span></span><span></span><span></span>
-                <!-- logo --><a href="#" class="menu-logo"> <img src="https://saltandlimesd.com/Images/Logo%20salt%20and%20lime.png" alt="Salt + Lime "/> </a>
-                <!-- menu items -->
-                <div class="menu">
-                    <ul>
-                        <li><a href="/">
-                        Home </a>
-                        </li>
-                        <li><a href="#menu">
-                        Menu </a>
-                        </li>
-                        <li><a href="#reserve">
-                        Reserve </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li><a href="https://stores.wallatees.com/salt_lime/shop/home">
-                        Shop </a>
-                        </li>
-                        <li><a href="/gallery">
-                        Gallery </a>
-                        </li>
-                        <li><a href="/our-story.html">
-                        Our Story </a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="nav-right">
+                    <li><a href="https://stores.wallatees.com/salt_lime/shop/home" class="neon-link" target="_blank"><span data-hover="Shop">Shop</span></a>
+                    </li>
+                    <li><a href="gallery.html" class="neon-link"><span data-hover="Gallery">Gallery</span></a>
+                    </li>
+                    <li><a href="our-story.html" class="neon-link"><span data-hover="Our Story">Our Story</span></a>
+                    </li>
+                </ul>
             </nav>
         </header>
         <main>
             <section id="home" class="hero">
                 <div class="video-container">
-                    <iframe class="hero-video" src="https://www.youtube.com/embed/sEx_9juJKdk?autoplay=1&mute=1&loop=1&playlist=sEx_9juJKdk&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="hero-video" src="https://www.youtube.com/embed/sEx_9juJKdk?autoplay=1&mute=1&loop=1&playlist=sEx_9juJKdk&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
                 </div>
             </section>
-            <div id="home-mobile" class="hero">
-                <div class="video-container">
-                    <iframe class="hero-video" src="https://www.youtube.com/embed/sEx_9juJKdk?autoplay=1&mute=1&loop=1&playlist=sEx_9juJKdk&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>             
             <div class="floating-coupon-button">
                 <a href="#coupon" class="floating-button">Free Dessert</a>
             </div>
