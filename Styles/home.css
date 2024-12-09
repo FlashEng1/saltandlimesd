@@ -206,7 +206,7 @@ main {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -774,7 +774,7 @@ body, html {
 
     /* Story Section */
     .story-grid {
-        grid-template-columns: 1fr;  /* Single column */
+        grid-template-columns: 50% 50%;  /* Single column */
     }
 
     /* Hours Section */
@@ -841,11 +841,15 @@ body, html {
         max-height: 500px;
     }
 
+    .image-box {width:100%;}
+    .menu-category h3 {opacity:1;}
+
 }
 
 @media screen and (max-width: 480px) {
     /* Styles for mobile devices */
     .video-container {position: absolute; top:50px;}
+    .story-section {height: 110vh; padding-bottom:150px;}
     #navmenu {display:none;}
     #home {margin-top:0;padding-top:0; display:none;}
     .mobile-menu {display:none;}    
@@ -873,7 +877,7 @@ body, html {
 
     .floating-coupon-button {
         right: 10px;
-        bottom: 70px;
+        bottom: 150px;
     }
 }
 
@@ -914,12 +918,12 @@ body, html {
 
 .menu-container a {
   text-decoration: none;
-  color: #000000;
+  color: #fff;
   transition: color 0.3s ease;
 }
 
 .menu-container a:hover {
-  color: #bd10e0;
+  color: #D9E223;
 }
 
 .menu-container input {
@@ -941,7 +945,7 @@ body, html {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #E1E28A;
+  background: #FFF;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -961,7 +965,7 @@ body, html {
 .menu-container input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(3px,-1px);
-  background: #000000;
+  background: #fff;
 }
 
 .menu-container input:checked ~ span:nth-child(4) {
@@ -1008,7 +1012,7 @@ body, html {
     top: 0;
     margin: -20px;
     padding: 75px 50px 50px;
-    background: #E1E28A;
+    background: #000;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
     transform-origin: 0% 0%;
