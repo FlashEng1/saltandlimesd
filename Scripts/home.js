@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
     };
 
-    menuTrigger.addEventListener('click', function(e) {
+   /* menuTrigger.addEventListener('click', function(e) {
         e.preventDefault();
         menuPopup.style.display = 'block';
         showWelcomeMessage();
@@ -38,12 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
     closeMenu.addEventListener('click', function() {
         menuPopup.style.display = 'none';
     });
+    
 
     menuPopup.addEventListener('click', function(e) {
         if (e.target === menuPopup) {
             menuPopup.style.display = 'none';
         }
     });
+    */
 
     function displayMenuItems(category) {
         const items = menuData[category];
@@ -79,9 +81,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentImageIndex = 0;
 
     function changeImage() {
-        storyImages[currentImageIndex].classList.remove('active');
+        //storyImages[currentImageIndex].classList.remove('active');
         currentImageIndex = (currentImageIndex + 1) % storyImages.length;
-        storyImages[currentImageIndex].classList.add('active');
+       // storyImages[currentImageIndex].classList.add('active');
     }
 
     // Change image every 5 seconds

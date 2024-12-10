@@ -30,7 +30,12 @@
             //   for an individual element
             var msnry = new Masonry( '.grid', {
             // options
-            });            
+            });     
+            function addMargin() {
+                window.scrollTo(0, window.pageYOffset - 1075);
+            }
+
+            window.addEventListener('hashchange', addMargin);  
         </script>
     </head>
     <body> 
@@ -38,22 +43,28 @@
             <nav id="navmenu" class="neon-nav">
                 <div class="nav-container">
                     <ul class="nav-left">
-                        <li><a href="home.html" class="neon-link"><span data-hover="Home">Home</span></a>
+                        <li>
+                            <a href="home.html" class="neon-link"><span data-hover="Home">Home</span></a>
                         </li>
-                        <li><a href="#menu" class="neon-link"><span data-hover="Menu">Menu</span></a>
+                        <li>
+                            <a href="#menu" class="neon-link"><span data-hover="Menu">Menu</span></a>
                         </li>
-                        <li><a href="#reserve" class="neon-link"><span data-hover="Reserve">Reserve</span></a>
+                        <li>
+                            <a href="#reserve" class="neon-link"><span data-hover="Reserve">Reserve</span></a>
                         </li>
                     </ul>
                     <div class="logo-section">
                         <img src="Images/Logo salt and lime.png" alt="Salt + Lime Logo" class="logo">
                     </div>
                     <ul class="nav-right">
-                        <li><a href="https://stores.wallatees.com/salt_lime/shop/home" class="neon-link" target="_blank"><span data-hover="Shop">Shop</span></a>
+                        <li>
+                            <a href="https://stores.wallatees.com/salt_lime/shop/home" class="neon-link" target="_blank"><span data-hover="Shop">Shop</span></a>
                         </li>
-                        <li><a href="gallery.html" class="neon-link"><span data-hover="Gallery">Gallery</span></a>
+                        <li>
+                            <a href="gallery.html" class="neon-link"><span data-hover="Gallery">Gallery</span></a>
                         </li>
-                        <li><a href="our-story.html" class="neon-link"><span data-hover="Our Story">Our Story</span></a>
+                        <li>
+                            <a href="#about" class="neon-link"><span data-hover="Our Story">Our Story</span></a>
                         </li>
                     </ul>
                 </div>
@@ -65,24 +76,30 @@
                 <!-- menu items -->
                 <div class="menu">
                     <ul>
-                        <li><a href="/">
+                        <li>
+                            <a href="/">
                         Home </a>
                         </li>
-                        <li><a href="#menu">
+                        <li>
+                            <a href="#menu">
                         Menu </a>
                         </li>
-                        <li><a href="#reserve">
+                        <li>
+                            <a href="#reserve">
                         Reserve </a>
                         </li>
                     </ul>
                     <ul>
-                        <li><a href="https://stores.wallatees.com/salt_lime/shop/home">
+                        <li>
+                            <a href="https://stores.wallatees.com/salt_lime/shop/home">
                         Shop </a>
                         </li>
-                        <li><a href="/gallery">
+                        <li>
+                            <a href="/gallery">
                         Gallery </a>
                         </li>
-                        <li><a href="#about">
+                        <li>
+                            <a href="#about">
                         Our Story </a>
                         </li>
                     </ul>
@@ -100,11 +117,9 @@
                     <iframe class="hero-video" src="https://www.youtube.com/embed/sEx_9juJKdk?autoplay=1&mute=1&loop=1&playlist=sEx_9juJKdk&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>             
-            <div class="floating-coupon-button">
-                <a href="#coupon" class="floating-button">Free Dessert</a>
+            <div class="floating-coupon-button"><a href="#coupon" class="floating-button">Free Dessert</a>
             </div>
-            <div class="floating-coupon-button">
-                <a href="#" class="floating-button" id="dessert-coupon-btn">Free Dessert</a>
+            <div class="floating-coupon-button"><a href="#" class="floating-button" id="dessert-coupon-btn">Free Dessert</a>
             </div>
             <section id="menu" class="menu-section">
                 <h2>Our Menu</h2>
@@ -146,7 +161,7 @@
                         <h3>Cocktails</h3>
                     </div>
                 </div>
-            </section>
+            </section>             
             <section id="reserve" class="contact-section">
                 <h2>Reserve a Table</h2>
                 <div class="contact-container">
@@ -160,9 +175,7 @@
                             <div class="contact-box">
                                 <h3>For private events</h3>
                                 <p><strong>Phone:</strong> (858)925-7093</p>
-                                <p><strong>Email:</strong> saltandlimesd@gmail.com</p>
-                                <br/>
-                                <br/> 
+                                <p><strong>Email:</strong> saltandlimesd@gmail.com</p><br/><br/> 
                             </div>
                             <div id="mc_embed_shell">
                                 <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
@@ -171,8 +184,7 @@
                                     <form action="https://gmail.us3.list-manage.com/subscribe/post?u=b6dbe74583a0d6523107693cf&amp;id=7cc4c0c2f4&amp;f_id=00c3c2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
                                         <div id="mc_embed_signup_scroll">
                                             <h2>Contact Us</h2>
-                                            <div class="indicates-required">
-                                                <span class="asterisk">*</span> indicates required
+                                            <div class="indicates-required"><span class="asterisk">*</span> indicates required
                                             </div>
                                             <div class="mc-field-group">
                                                 <label for="mce-FNAME">First Name </label>
@@ -185,8 +197,7 @@
                                             <div class="mc-field-group">
                                                 <label for="mce-PHONE">Phone Number <span class="asterisk">*</span>
                                                 </label>
-                                                <div class="phonefield phonefield-us">(<span class="phonearea"><input class="phonepart REQ_CSS" pattern="[0-9]*" id="mce-PHONE-area" name="PHONE[area]" maxlength="3" size="3" type="text" value=""></span>)<span class="phonedetail1"><input class="phonepart REQ_CSS" pattern="[0-9]*" id="mce-PHONE-detail1" name="PHONE[detail1]" maxlength="3" size="3" type="text" value=""></span> -<span class="phonedetail2"><input class="phonepart REQ_CSS" pattern="[0-9]*" id="mce-PHONE-detail2" name="PHONE[detail2]" maxlength="4" size="4" type="text" value=""></span>
-                                                    <span class="small-meta nowrap">(###) ###-####</span>
+                                                <div class="phonefield phonefield-us">(<span class="phonearea"><input class="phonepart REQ_CSS" pattern="[0-9]*" id="mce-PHONE-area" name="PHONE[area]" maxlength="3" size="3" type="text" value=""></span>)<span class="phonedetail1"><input class="phonepart REQ_CSS" pattern="[0-9]*" id="mce-PHONE-detail1" name="PHONE[detail1]" maxlength="3" size="3" type="text" value=""></span> -<span class="phonedetail2"><input class="phonepart REQ_CSS" pattern="[0-9]*" id="mce-PHONE-detail2" name="PHONE[detail2]" maxlength="4" size="4" type="text" value=""></span><span class="small-meta nowrap">(###) ###-####</span>
                                                 </div>
                                             </div>
                                             <div class="mc-field-group">
@@ -196,9 +207,7 @@
                                             <div class="mc-field-group size1of2">
                                                 <label for="mce-DATERESERV-month">Date of Reservation <span class="asterisk">*</span>
                                                 </label>
-                                                <div class="datefield">
-                                                    <span class="subfield dayfield"><input class="datepart " type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="DATERESERV[day]" id="mce-DATERESERV-day" value=""></span> /<span class="subfield monthfield"><input class="datepart " type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="DATERESERV[month]" id="mce-DATERESERV-month" value=""></span> /<span class="subfield yearfield"><input class="datepart " type="text" pattern="[0-9]*" placeholder="YYYY" size="4" maxlength="4" name="DATERESERV[year]" id="mce-DATERESERV-year" value=""></span>
-                                                    <span class="small-meta nowrap">( dd / mm / yyyy )</span>
+                                                <div class="datefield"><span class="subfield dayfield"><input class="datepart " type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="DATERESERV[day]" id="mce-DATERESERV-day" value=""></span> /<span class="subfield monthfield"><input class="datepart " type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="DATERESERV[month]" id="mce-DATERESERV-month" value=""></span> /<span class="subfield yearfield"><input class="datepart " type="text" pattern="[0-9]*" placeholder="YYYY" size="4" maxlength="4" name="DATERESERV[year]" id="mce-DATERESERV-year" value=""></span><span class="small-meta nowrap">( dd / mm / yyyy )</span>
                                                 </div>
                                             </div>
                                             <div class="mc-field-group">
@@ -225,24 +234,20 @@
                                 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
                                 <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[4]='PHONE';ftypes[4]='phone';fnames[3]='PARTYSIZE';ftypes[3]='text';fnames[6]='DATERESERV';ftypes[6]='date';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
                             </div>
-                            <div class="social-media">
-                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <div class="social-media"><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                             </div>
                             <div class="chat-section">
-                                <h3>Have Questions?</h3>
-                                <a href="https://wa.me/2105351095" class="chat-button" target="_blank"> <i class="fab fa-whatsapp"></i> Chat with us now </a>
+                                <h3>Have Questions?</h3><a href="https://wa.me/2105351095" class="chat-button" target="_blank"> <i class="fab fa-whatsapp"></i> Chat with us now </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="image-box" style="width:100%;">
+                <div class="image-box">onta
                     <img src="Images/reserve.jpeg" alt="Horizontal Image" class="horizontal-image">
                 </div>
             </section>
-            <section id="about" class="story-section" style="padding-top:500xp;">
-                <br/><br/>
+            <section id="about" class="story-section" style="padding-top:500xp;"><br/>
+                <br/>
                 <h2>Our Story: From Truck to Table</h2>
                 <div class="story-grid">
                     <div class="story-item">
@@ -269,7 +274,8 @@
                         <img src="Images/2A1A1865.jpg" alt="Our current restaurant">
                         <p>Our thriving restaurant today</p>
                     </div>
-                </div><a href="#full-story" class="story-button">Read Our Full Story</a>
+                </div>
+                <a href="#full-story" class="story-button">Read Our Full Story</a>
             </section>
         </main>
         <div id="category-menu-popup" class="category-menu-popup">
@@ -324,11 +330,14 @@
                     <div class="hours-column">
                         <h3>Dining Hours</h3>
                         <ul>
-                            <li><span class="day">Monday - Thursday:</span> 11:30 AM - 9 PM
+                            <li>
+                                <span class="day">Monday - Thursday:</span> 11:30 AM - 9 PM
                             </li>
-                            <li><span class="day">Friday:</span> 11:30 AM - 9:30 PM
+                            <li>
+                                <span class="day">Friday:</span> 11:30 AM - 9:30 PM
                             </li>
-                            <li><span class="day">Saturday & Sunday:</span> 10:30 AM - 9:30 PM
+                            <li>
+                                <span class="day">Saturday & Sunday:</span> 10:30 AM - 9:30 PM
                             </li>
                         </ul>
                     </div>
@@ -342,15 +351,18 @@
         </section>
         <div class="sticky-footer">
             <div style="--display: flex; --flex-direction: column; --container-widget-width: calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% ); --container-widget-height: initial; --container-widget-flex-grow: 0; --container-widget-align-self: initial; --flex-wrap-mobile: wrap; --justify-content: center; --align-items: center; --background-transition: 0.3s; --padding-top: 0px; --padding-bottom: 0px; --padding-left: 0px; --padding-right: 0px;">
-                <div><a href="#reserve" class="cta-button">Reserve a Table</a>
+                <div>
+                    <a href="#reserve" class="cta-button">Reserve a Table</a>
                 </div>
             </div>
             <div style="--display: flex; --flex-direction: column; --container-widget-width: calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% ); --container-widget-height: initial; --container-widget-flex-grow: 0; --container-widget-align-self: initial; --flex-wrap-mobile: wrap; --justify-content: center; --align-items: center; --background-transition: 0.3s; --padding-top: 0px; --padding-bottom: 0px; --padding-left: 0px; --padding-right: 0px;">
-                <div><a href="https://www.toasttab.com/local/order/salt-lime-1201-camino-del-mar-suite-101/r-e9544194-9a54-477f-b240-1adee214375c" class="cta-button" target="_blank">Order To-Go</a>
+                <div>
+                    <a href="https://www.toasttab.com/local/order/salt-lime-1201-camino-del-mar-suite-101/r-e9544194-9a54-477f-b240-1adee214375c" class="cta-button" target="_blank">Order To-Go</a>
                 </div>
             </div>
             <div style="--display: flex; --flex-direction: column; --container-widget-width: calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% ); --container-widget-height: initial; --container-widget-flex-grow: 0; --container-widget-align-self: initial; --flex-wrap-mobile: wrap; --justify-content: center; --align-items: center; --background-transition: 0.3s; --padding-top: 0px; --padding-bottom: 0px; --padding-left: 0px; --padding-right: 0px;">
-                <div><a href="#" class="cta-button" id="events-btn">Book an Event</a>
+                <div>
+                    <a href="#" class="cta-button" id="events-btn">Book an Event</a>
                 </div>
             </div>
         </div>
