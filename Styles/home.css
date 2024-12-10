@@ -825,7 +825,7 @@ body, html {
 
 @media (max-width: 768px) {
     /* Styles for tablets */
-    .video-container {position: absolute; top:50px;}
+    .video-container {position: absolute; top:100px;}
     #navmenu {display:none;}
     #home {margin-top:0;padding-top:0; display:none;}
     .mobile-menu {display:none;}    
@@ -847,7 +847,7 @@ body, html {
 
 @media screen and (max-width: 480px) {
     /* Styles for mobile devices */
-    .video-container {position: absolute; top:50px;}
+    .video-container {position: absolute; top:75px;}
     .story-section {height: 110vh; padding-bottom:150px;}
     #navmenu {display:none;}
     #home {margin-top:0;padding-top:0; display:none;}
